@@ -4,12 +4,14 @@
 
 <div class="text-center">
     @using(Html.BeginForm("SayMyName", "Home", FormMethod.Post))
-        {
-            <p>
+    {
+        <div class="formName">
+            <div class="wrapper">
                 Name:
-                <div>@Html.TextBox("Name")</div>
-            </p>
-            <button class="btn btn-outline-success" type="submit">Enter</button>
-        }
+                            <div>@Html.TextBox("Name")</div>
+                            <button class="btn btn-outline-success" type="submit">Enter</button>
+            </div>
+        </div>
+    }
 </div>
 
